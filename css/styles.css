@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900|Roboto:300,400,900');
+
+:root {
+--font-raleway: 'Raleway', sans-serif;
+--font-roboto: 'Roboto', sans-serif;
+--color: #303030;
+--hover: #e10011;
+} 
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+	background: #eee;
+}
+
+a { 
+text-decoration: none;
+ }
+
+.container { 
+width: 100%;
+max-width: 1240px;
+min-width: 480px;
+padding: 0 20px;
+margin: 0 auto;
+height: 100%; 
+}
+
+.header { 
+color:#303030;
+ padding-top: 40px;
+ height: 880px;
+}
+
+.navigation { 
+height: 45px; }
+
+.logo { 
+float:left; 
+font-size: 48px;
+height: 100%;
+font-family: var(--font-roboto);
+color:#303030;
+text-decoration: none;
+font-weight: 900;
+letter-spacing: 1.2px;
+ }
+
+ .logo:hover { 
+	transform: scale(.9);
+ }
+
+.menu { 
+ float: right;
+display: flex;
+align-items: center;
+height: 100%; 
+
+}
+
+.menu > li a { 
+color:var(--color);
+font-family: var(--font-roboto);
+font-size: 18px;
+}
+
+.menu > li a:hover { 
+color: var(--hover); 
+}
+
+.menu > li:first-child { 
+padding:0 40px;
+ }
+
+.menu > li:last-child/*::after*/ { 
+/*content: '\2630';*/
+padding-left: 30px; } 
+
+.content {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 70px;
+/*padding-right: 35px;*/
+
+ }
+
+.text { 
+	padding-top:105px;
+text-align: right;
+margin-right: 25px;
+}
+
+.text h1{
+	letter-spacing: 2.5px;
+	font-size: 150px;
+	font-family: var(--font-raleway);
+	font-weight: 900;
+	color:var(--color);
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.text p{
+	font-family:var(--font-roboto) ;
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 2.5px;
+	line-height: 1.5;
+	padding-bottom: 30px;
+}
+
+.text a { 
+color: var(--color);
+font-size: 24px;
+font-weight: 700;
+font-family: var(--font-roboto);
+/*padding-top: 30px;*/
+ }
+
+.text a:hover { 
+color: var(--hover); 
+}
+
+.img { 
+padding: 105px 100px 0; 
+}
+
+.dots { 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center; 
+}
+
+.dots li a{
+	color: var(--color);
+font-size: 40px;
+font-weight: 900; 
+padding: 4px;
+}
+
+.dots li a:hover { 
+	color:var(--hover);
+ }
+
+.menu > li{
+	position: relative; /*!!!!!!*/
+}
+
+.sidebar li{
+	font-family: var(--font-roboto);
+	line-height: 25px;
+	text-align: left;
+}
+
+.menu .sidebar{ /*!!!!!!!!*/
+	position: absolute;
+  top: 20px;
+  right: 0px;
+  z-index: 10;
+  width: 100px;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  display:none;
+}
+
+.menu > li:hover .sidebar {
+    display: block;
+}
+
+
